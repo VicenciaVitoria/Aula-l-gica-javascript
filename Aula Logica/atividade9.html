@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eu voto??</h1>
+    <script>
+        let ano = parseInt (prompt ("Olá visitante, informe seu ano de nascimento, por gentileza: "))
+        let idade = 2022 - ano
+        
+        if (idade < 16) {
+            document.write ("Sua idade é " + idade + " anos, voce não vota")
+        }else if (idade >= 18 && idade <= 70){
+            document.write ("<br>" + "Sua idade é " + idade + " anos, voto é obrigatorio")
+        }
+        else {
+            document.write ("<br>" + "Sua idade é " + idade + "anos , voto facultativo")
+        }
+    </script>
+    
+</body>
+</html>

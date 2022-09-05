@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo de media</h1>
+    <script>
+        let soma = 0
+        let num1 = parseInt (prompt("Por favor, informe sua primeira nota: "))
+            if (num1 < 10 && num1 > 0) {
+            soma = num1
+        }
+
+        let num2 = parseInt (prompt("Informe sua segunda nota: "))
+            if (num2 < 10 && num2 > 0) {
+            soma = soma + num2
+        }
+        
+        let num3 = parseInt (prompt("Informe sua terceira nota: "))
+            if (num3 < 10 && num3 > 0) {
+            soma = soma + num3
+        }
+        
+        let num4 = parseInt (prompt("Informe sua quarta nota: "))
+            if (num4 < 10 && num4 > 0) {
+            soma = soma + num4
+        }
+
+        media = soma/4
+
+        if (media > 5) {
+            document.write ("Parabens, sua media é " + media + ", você passou no teste")
+        } else {
+            document.write ("Tente novamente, sua media é " + media)
+        }
+
+    </script>
+    
+</body>
+</html>
